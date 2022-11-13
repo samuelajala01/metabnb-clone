@@ -1,0 +1,5 @@
+Color props - 
+background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+border-radius: 10px;
+
+modal opacity and color: #404040 30%

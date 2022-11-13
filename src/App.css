@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 0.5px solid red; */
+}
+
+body{
+  scroll-behavior: smooth;
+  font-family: 'Red Rose';
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  border: unset;
+}
+
+.purple{
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+}
+
+.hero-container{
+  display: flex;
+  margin: 6.5rem 4.5rem 4.5rem 4.5rem;
+  gap: 5vw;
+}
+
+.hero-tagline{
+  flex: 1.1;
+}
+.hero-img-container{
+  flex: 1;
+}
+
+.hero-container h1, .hero-container span{
+  font-size: 3rem;
+}
+
+.hero-description{
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.hero-search{
+  width: 100%;
+  display: flex;
+}
+
+input{
+  padding: 0.8rem;
+  flex: 2;
+  border-bottom-left-radius: 0.5rem;
+   /* border: 1px solid gray; */
+  border-top-left-radius: 0.5rem;
+}
+
+.hero-search button{
+  flex: 1;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+  
+/* //Nav bar// */
+
+.home-nav{
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links{
+  margin: auto 0;
+  display: flex;
+}
+
+.nav-link{
+  margin: 0 1rem;
+}
+
+.connect-btn{
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.purple-text{
+  color: purple;
+}
+
+.white-text{
+  color: white;
+}
+
+.ad{
+  text-align: center;
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+/* //Inspiration Section// */
+.inspiration-section, .places-section{
+  padding: 0 4.5vw;
+}
+
+.inspiration-section h2{
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.product-container{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-flow: wrap;
+  margin: 3.5rem 0;
+}
+
+.product-item img{
+  margin: auto;
+  display: flex;
+}
+
+.product-item{
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.product-description{
+  margin-top: 0.5rem;
+}
+
+
+.product-item p{
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.product-item p span{
+  font-size: 0.6rem;
+}
+
+.nft-section{
+  background-color: #A02279;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3.5rem;
+  gap: 5vw;
+}
+
+.nft-text, .nft-img-container{
+ flex: 1;
+}
+
+.nft-text h3, .nft-text p, .nft-text button{
+  margin: 2rem 0;
+}
+
+.nft-text-header{
+  font-size: 3rem;
+}
+
+.nft-text{
+  padding: 3.5rem;
+  color: white;
+}
+
+.nft-btn{
+  padding: .7rem 1.4rem;
+  color: #A02279;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.places-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.place{
+  margin: 0 1.5vw;
+}
+
+.location{
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
+.footer-section{
+  background-color: black;
+  color: white;
+}
+
+footer{
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h4{
+  margin-bottom: 1rem;
+}
+
+footer div p{
+margin-bottom: 0.8rem;
+font-size: 0.8rem;
+opacity: 0.7;
+font-weight: lighter;
+}
