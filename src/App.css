@@ -97,11 +97,12 @@ input{
 }
 
 .ad{
-  text-align: center;
-  padding: 0.7rem 0;
   display: flex;
   justify-content: space-around;
+  width: 100vw;
   color: white;
+  padding: 0.5rem 0;
+  height: fit-content;
 }
 
 /* //Inspiration Section// */
@@ -178,6 +179,7 @@ input{
 .nft-btn{
   padding: .7rem 1.4rem;
   color: #A02279;
+  font-weight: 600;
   background-color: white;
   border-radius: 0.5rem;
 }
@@ -187,7 +189,7 @@ input{
   justify-content: space-between;
   padding: 3.5rem;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: visible;
 }
 
 .place{
@@ -208,6 +210,7 @@ input{
 footer{
   padding: 4rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -220,4 +223,10 @@ margin-bottom: 0.8rem;
 font-size: 0.8rem;
 opacity: 0.7;
 font-weight: lighter;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-links{
+    display: none;
+  }
 }

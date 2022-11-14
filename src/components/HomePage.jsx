@@ -1,5 +1,8 @@
 import InspirationSection from "./InspirationSection";
 import NftSection from "./nftSection";
+import Metamask from "../assets/Logos/Group 4040.png";
+import Opensea from "../assets/Logos/Frame 4041.png";
+import MbToken from "../assets/Logos/Group 59537.png";
 
 const HomePage = () => {
   return (
@@ -26,7 +29,11 @@ const HomePage = () => {
         </div>
 
         <div className="purple ad">
-          <span>MBToken</span> <span>METAMASK</span> <span>OpenSea</span>
+          <img src={MbToken} height="40" />
+
+          <img src={Metamask} height="40" />
+
+          <img src={Opensea} height="40" />
         </div>
       </section>
       <InspirationSection />
