@@ -16,7 +16,11 @@ const PlacesNavBar = () => {
     <nav className="places-nav">
       <div className="places">
         {placelist.map((place) => {
-          return <span className="place">{place}</span>;
+          return (
+            <span className="place" key={place}>
+              {place}
+            </span>
+          );
         })}
 
         <span className="place location">

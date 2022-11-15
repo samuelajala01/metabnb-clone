@@ -1,5 +1,4 @@
-import Footer from "./Footer";
-import NavBar from "./NavBar";
+// import Footer from "./Footer";
 import ProductItem from "./ProductItem";
 import Image1 from "../assets/Images/img-1.jpg";
 import Image2 from "../assets/Images/img-2.jpg";
@@ -15,35 +14,98 @@ import Image13 from "../assets/Images/img-13.jpg";
 import Image14 from "../assets/Images/img-14.jpg";
 import Image15 from "../assets/Images/img-15.jpg";
 import Image16 from "../assets/Images/img-16.jpg";
+import Metabnb from "../assets/Logos/metabnb.svg";
 import PlacesNavBar from "./PlacesNavBar";
+import Modal from "react-modal";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const PlaceToStay = () => {
   const productimages = [
-    { src: Image1, name: "House 2" },
+    { src: Image1, name: "House 1" },
     { src: Image2, name: "House 2" },
     { src: Image3, name: "House 3" },
     { src: Image4, name: "House 4" },
-    { src: Image5, name: "House 4" },
-    { src: Image7, name: "House 4" },
-    { src: Image6, name: "House 6" },
+    { src: Image5, name: "House 5" },
+    { src: Image7, name: "House 6" },
+    { src: Image6, name: "House 7" },
     { src: Image8, name: "House 8" },
     { src: Image11, name: "House 9" },
     { src: Image12, name: "House 10" },
     { src: Image13, name: "House 11" },
-    { src: Image14, name: "House 11" },
-    { src: Image15, name: "House 11" },
-    { src: Image16, name: "House 11" },
-    { src: Image12, name: "House 10" },
-    { src: Image2, name: "House 2" },
+    { src: Image14, name: "House 12" },
+    { src: Image15, name: "House 13" },
+    { src: Image16, name: "House 14" },
+    { src: Image12, name: "House 15" },
+    { src: Image2, name: "House 16" },
   ];
+
+  Modal.setAppElement("#root");
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
     <>
+      <nav className="home-nav">
+        <img src={Metabnb} height="50" />
+        <span className="nav-links">
+          <Link className="nav-link" to="/">
+            Home
+          </Link>
+          <Link className="nav-link" to="/placetostay">
+            Place to stay
+          </Link>
+          <Link className="nav-link">NFTs</Link>
+          <Link className="nav-link">Community</Link>
+        </span>
+        <button
+          className="purple connect-btn white-text"
+          onClick={() => setModalIsOpen(true)}
+        >
+          Connect Wallet
+        </button>
+      </nav>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        style={{
+          overlay: {
+            margin: "auto",
+          },
+          content: {
+            margin: "auto",
+            maxWidth: "30rem",
+            height: "fit-content",
+            borderRadius: "1rem",
+            padding: "0",
+          },
+        }}
+      >
+        <section className="modal-box">
+          <div className="connect-wallet-div">
+            <p className="modal-title">Connect Wallet</p>
+            <p className="modal-close" onClick={() => setModalIsOpen(false)}>
+              X
+            </p>
+          </div>
+          <p className="choose-wallet-text">Choose your preferred wallet</p>
+          <div className="select-wallet-div">
+            <div className="wallet">
+              <p className="wallet-name">Metamask</p>
+              <p>V</p>
+            </div>
+            <div className="wallet">
+              <p className="wallet-name">WalletConnect</p>
+              <p>V</p>
+            </div>
+          </div>
+        </section>
+      </Modal>
       <section className="places-section">
         <PlacesNavBar />
         <div className="product-container">
           {productimages.map((img) => {
-            return <ProductItem name={img.name} src={img.src} />;
+            return <ProductItem key={img.name} src={img.src} />;
           })}
         </div>
       </section>

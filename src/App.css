@@ -93,6 +93,7 @@ input {
 .connect-btn {
   padding: 0.7rem 1.4rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .purple-text {
@@ -105,6 +106,47 @@ input {
 
 .ad {
   width: 100vw;
+}
+
+.connect-wallet-div{
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.modal-title{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.choose-wallet-text{
+  margin-left: 1rem;
+  color: black;
+}
+
+.select-wallet-div{
+  padding: 1rem;
+}
+
+.modal-close{
+  cursor: pointer;
+}
+
+.wallet-name{
+  font-weight: 600;
+  color: black;
+}
+
+.wallet{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0.4rem 0;
+  border-radius: 0.4rem;
+  background-color: rgb(238, 234, 234);
+  border: 1px solid gray;
 }
 
 /* //Inspiration Section// */
@@ -213,10 +255,12 @@ input {
 }
 
 .places{
-  width: 80vw;
+  max-width: 80vw;
   white-space: nowrap;
   overflow: auto;
   padding: 2rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .place {
