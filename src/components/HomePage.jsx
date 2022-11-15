@@ -1,5 +1,5 @@
 import InspirationSection from "./InspirationSection";
-import NftSection from "./nftSection";
+import NftSection from "./NftSection";
 import Metamask from "../assets/Logos/Group 4040.png";
 import Opensea from "../assets/Logos/Frame 4041.png";
 import MbToken from "../assets/Logos/Group 59537.png";
