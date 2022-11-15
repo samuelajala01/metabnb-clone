@@ -1,102 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   /* border: 0.5px solid red; */
 }
 
-body{
+body {
   scroll-behavior: smooth;
   font-family: 'Red Rose';
+  color: #434343;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-button{
+button {
   border: unset;
 }
 
-.purple{
+.purple {
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
 }
 
-.hero-container{
+.hero-container {
   display: flex;
   margin: 6.5rem 4.5rem 4.5rem 4.5rem;
   gap: 5vw;
 }
 
-.hero-tagline{
+.hero-tagline {
   flex: 1.1;
 }
-.hero-img-container{
+
+.hero-img-container {
   flex: 1;
 }
 
-.hero-container h1, .hero-container span{
+.hero-container h1,
+.hero-container span {
   font-size: 3rem;
 }
 
-.hero-description{
+.hero-description {
   margin: 2rem 0;
   font-size: 1.2rem;
 }
 
-.hero-search{
+.hero-search {
   width: 100%;
   display: flex;
 }
 
-input{
+input {
   padding: 0.8rem;
   flex: 2;
   border-bottom-left-radius: 0.5rem;
-   /* border: 1px solid gray; */
+  /* border: 1px solid gray; */
   border-top-left-radius: 0.5rem;
 }
 
-.hero-search button{
+.hero-search button {
   flex: 1;
   border-bottom-right-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-  
+
 /* //Nav bar// */
 
-.home-nav{
+.home-nav {
   padding: 1rem 0;
   display: flex;
   justify-content: space-around;
 }
 
-.nav-links{
+.nav-links {
   margin: auto 0;
   display: flex;
 }
 
-.nav-link{
+.nav-link {
   margin: 0 1rem;
 }
 
-.connect-btn{
+.connect-btn {
   padding: 0.7rem 1.4rem;
   border-radius: 0.5rem;
 }
 
-.purple-text{
+.purple-text {
   color: purple;
 }
 
-.white-text{
+.white-text {
   color: white;
 }
 
-.ad{
+.ad {
   display: flex;
   justify-content: space-around;
   width: 100vw;
@@ -106,17 +109,18 @@ input{
 }
 
 /* //Inspiration Section// */
-.inspiration-section, .places-section{
+.inspiration-section,
+.places-section {
   padding: 0 4.5vw;
 }
 
-.inspiration-section h2{
+.inspiration-section h2 {
   margin-top: 2.5rem;
   font-size: 2.5rem;
   text-align: center;
 }
 
-.product-container{
+.product-container {
   display: flex;
   margin: auto;
   justify-content: space-around;
@@ -125,33 +129,33 @@ input{
   margin: 3.5rem 0;
 }
 
-.product-item img{
+.product-item img {
   margin: auto;
   display: flex;
 }
 
-.product-item{
+.product-item {
   border: 1px solid gray;
   border-radius: 0.5rem;
   padding: 1rem;
 }
 
-.product-description{
+.product-description {
   margin-top: 0.5rem;
 }
 
 
-.product-item p{
+.product-item p {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0;
 }
 
-.product-item p span{
+.product-item p span {
   font-size: 0.6rem;
 }
 
-.nft-section{
+.nft-section {
   background-color: #A02279;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -159,24 +163,27 @@ input{
   gap: 5vw;
 }
 
-.nft-text, .nft-img-container{
- flex: 1;
+.nft-text,
+.nft-img-container {
+  flex: 1;
 }
 
-.nft-text h3, .nft-text p, .nft-text button{
+.nft-text h3,
+.nft-text p,
+.nft-text button {
   margin: 2rem 0;
 }
 
-.nft-text-header{
+.nft-text-header {
   font-size: 3rem;
 }
 
-.nft-text{
+.nft-text {
   padding: 3.5rem;
   color: white;
 }
 
-.nft-btn{
+.nft-btn {
   padding: .7rem 1.4rem;
   color: #A02279;
   font-weight: 600;
@@ -184,7 +191,7 @@ input{
   border-radius: 0.5rem;
 }
 
-.places-nav{
+.places-nav {
   display: flex;
   justify-content: space-between;
   padding: 3.5rem;
@@ -192,41 +199,41 @@ input{
   overflow-x: visible;
 }
 
-.place{
+.place {
   margin: 0 1.5vw;
 }
 
-.location{
+.location {
   border: 1px solid gray;
   border-radius: 0.4rem;
   padding: 0.5rem;
 }
 
-.footer-section{
+.footer-section {
   background-color: black;
   color: white;
 }
 
-footer{
+footer {
   padding: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-footer h4{
+footer h4 {
   margin-bottom: 1rem;
 }
 
-footer div p{
-margin-bottom: 0.8rem;
-font-size: 0.8rem;
-opacity: 0.7;
-font-weight: lighter;
+footer div p {
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 800px) {
-  .nav-links{
+  .nav-links {
     display: none;
   }
 }

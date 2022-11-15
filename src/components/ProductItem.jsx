@@ -13,7 +13,7 @@ const ProductItem = (props) => {
           <span>234.5km away</span>
           <span>available for 2 weeks stay</span>
         </p>
-        <span>&&&&&</span>
+        <span className="stars">⭐⭐⭐⭐⭐</span>
       </div>
     </div>
   );
