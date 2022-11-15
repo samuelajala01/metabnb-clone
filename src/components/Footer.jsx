@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="social-icons">A B C</div>
-      <copy>C 2022 Metabnb</copy>
+      <span>C 2022 Metabnb</span>
     </section>
   );
 };
