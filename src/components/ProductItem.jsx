@@ -1,8 +1,10 @@
+import stars from "../assets/Logos/stars.png";
+
 const ProductItem = (props) => {
   return (
     <div className="product-item">
       <div className="product-img-container">
-        <img src={props.src} height="250" width="250" />
+        <img className="product-img" src={props.src} height="250" width="250" />
       </div>
       <div className="product-description">
         <p>
@@ -13,7 +15,9 @@ const ProductItem = (props) => {
           <span>234.5km away</span>
           <span>available for 2 weeks stay</span>
         </p>
-        <span className="stars">⭐⭐⭐⭐⭐</span>
+        <span className="star-img">
+          <img className="stars" src={stars} />
+        </span>
       </div>
     </div>
   );

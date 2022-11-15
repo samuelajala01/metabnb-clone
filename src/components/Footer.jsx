@@ -1,4 +1,5 @@
-import Metabnb from "../assets/Logos/image 66.png";
+import facebook from "../assets/Logos/facebook-logo.svg";
+import twitter from "../assets/Logos/twitter-logo.svg";
 
 const Footer = () => {
   return (
@@ -29,7 +30,9 @@ const Footer = () => {
           <p>Contact us</p>
         </div>
       </footer>
-      <div className="social-icons">A B C</div>
+      <div className="social-icons">
+        <img src={facebook} /> <img src={twitter} />{" "}
+      </div>
       <span>C 2022 Metabnb</span>
     </section>
   );

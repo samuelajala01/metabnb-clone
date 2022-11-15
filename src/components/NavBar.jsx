@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import MbToken from "../assets/Logos/Group 59537.png";
+import Metabnb from "../assets/Logos/metabnb.svg";
 
 const NavBar = () => {
   // const handleModal = () => {
@@ -8,7 +8,7 @@ const NavBar = () => {
 
   return (
     <nav className="home-nav">
-      <img src={MbToken} height="50" className="purple" />{" "}
+      <img src={Metabnb} height="50" />
       <span className="nav-links">
         <Link className="nav-link" to="/">
           Home

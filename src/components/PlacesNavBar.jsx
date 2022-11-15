@@ -1,3 +1,5 @@
+import FilterIcon from "../assets/Logos/filter-icon.svg";
+
 const PlacesNavBar = () => {
   const placelist = [
     "Restaurant",
@@ -17,7 +19,9 @@ const PlacesNavBar = () => {
           return <span className="place">{place}</span>;
         })}
 
-        <span className="place location">Location E</span>
+        <span className="place location">
+          Location <img src={FilterIcon} />{" "}
+        </span>
       </div>
     </nav>
   );

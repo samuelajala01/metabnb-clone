@@ -3,6 +3,8 @@ import NftSection from "./NftSection";
 import Metamask from "../assets/Logos/Group 4040.png";
 import Opensea from "../assets/Logos/Frame 4041.png";
 import MbToken from "../assets/Logos/Group 59537.png";
+import HeroImg from "../assets/Images/hero-img.jpg";
+import AdImg from "../assets/Images/ad-img.png";
 
 const HomePage = () => {
   return (
@@ -25,16 +27,12 @@ const HomePage = () => {
               <button className="purple white-text">Search</button>
             </div>
           </div>
-          <div className="hero-img-container">Images</div>
+          <div className="hero-img-container">
+            <img src={HeroImg} />
+          </div>
         </div>
 
-        <div className="purple ad">
-          <img src={MbToken} height="40" />
-
-          <img src={Metamask} height="40" />
-
-          <img src={Opensea} height="40" />
-        </div>
+        <img className="ad" src={AdImg} />
       </section>
       <InspirationSection />
       <NftSection />

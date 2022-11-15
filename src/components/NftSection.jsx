@@ -1,3 +1,5 @@
+import NftsImg from "../assets/Images/nfts-img.jpg";
+
 const NftSection = () => {
   return (
     <section className="nft-section">
@@ -10,7 +12,9 @@ const NftSection = () => {
         </p>
         <button className="nft-btn">Learn more</button>
       </div>
-      <div className="nft-img-container">image</div>
+      <div className="nft-img-container">
+        <img className="nfts-img" src={NftsImg} />
+      </div>
     </section>
   );
 };

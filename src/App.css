@@ -59,7 +59,6 @@ input {
   padding: 0.8rem;
   flex: 2;
   border-bottom-left-radius: 0.5rem;
-  /* border: 1px solid gray; */
   border-top-left-radius: 0.5rem;
 }
 
@@ -67,6 +66,11 @@ input {
   flex: 1;
   border-bottom-right-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.hero-img-container{
+  position: relative;
+  bottom: 4rem;
 }
 
 /* //Nav bar// */
@@ -100,12 +104,7 @@ input {
 }
 
 .ad {
-  display: flex;
-  justify-content: space-around;
   width: 100vw;
-  color: white;
-  padding: 0.5rem 0;
-  height: fit-content;
 }
 
 /* //Inspiration Section// */
@@ -129,7 +128,7 @@ input {
   margin: 3.5rem 0;
 }
 
-.product-item img {
+.product-img {
   margin: auto;
   display: flex;
 }
@@ -155,12 +154,25 @@ input {
   font-size: 0.6rem;
 }
 
+.stars{
+  position: relative;
+  left: 0;
+}
+
 .nft-section {
   background-color: #A02279;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3.5rem;
   gap: 5vw;
+}
+
+.nft-img-container{
+  background-color: #A02279;
+}
+
+.nfts-img{
+  width: 44vw;
 }
 
 .nft-text,
@@ -191,22 +203,37 @@ input {
   border-radius: 0.5rem;
 }
 
+
+
 .places-nav {
   display: flex;
   justify-content: space-between;
   padding: 3.5rem;
-  flex-wrap: nowrap;
-  overflow-x: visible;
+  
+}
+
+.places{
+  width: 80vw;
+  white-space: nowrap;
+  overflow: auto;
+  padding: 2rem 0;
 }
 
 .place {
   margin: 0 1.5vw;
+  font-size: 1.2rem;
 }
 
 .location {
   border: 1px solid gray;
   border-radius: 0.4rem;
   padding: 0.5rem;
+  display: inline-flex;
+  margin: auto 0;
+}
+
+.location img{
+  margin-left: 0.5rem;
 }
 
 .footer-section {
