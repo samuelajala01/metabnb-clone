@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 0.5px solid red;
+  /* border: 0.5px solid red; */
 }
 
 body {
@@ -383,6 +383,7 @@ footer div p {
 }
 
 @media screen and (max-width: 600px){
+  
   .home-nav{
     display: flex;
     justify-content: space-between;
@@ -394,7 +395,7 @@ footer div p {
     margin: auto 0;
   }
   .connect-btn{
-    padding: 0.7rem;
+    padding: 0.4rem ;
   }
   .hero-container{
     margin-left: 2rem;

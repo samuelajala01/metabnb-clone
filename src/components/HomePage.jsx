@@ -23,7 +23,7 @@ const HomePage = () => {
             Home
           </Link>
           <Link className="nav-link" to="/placetostay">
-            Place to stay
+            Places
           </Link>
           <Link className="nav-link hide-link">NFTs</Link>
           <Link className="nav-link hide-link">Community</Link>
