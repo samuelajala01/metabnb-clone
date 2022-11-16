@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="social-icons">
           <img src={facebook} /> <img src={instagram} /> <img src={twitter} />
         </div>
-        <span>C 2022 Metabnb</span>
+        <span>&#169; 2022 Metabnb</span>
       </div>
     </section>
   );
