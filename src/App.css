@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 0.5px solid red; */
+  border: 0.5px solid red;
 }
 
 body {
@@ -33,7 +33,7 @@ button {
 
 .hero-container {
   display: flex;
-  margin: 6.5rem 4.5rem 4.5rem 4.5rem;
+  margin: 6.5rem 6.5vw 4.5rem 6.5vw;
   gap: 5vw;
   flex-wrap: wrap;
 }
@@ -111,7 +111,8 @@ input {
 }
 
 .ad {
-  width: 100vw;
+  max-width: 98vw;
+  text-align: center;
 }
 
 .connect-wallet-div{
@@ -124,11 +125,16 @@ input {
 .modal-title{
   font-weight: 600;
   font-size: 1.2rem;
+  font-family: "sora";
   color: black;
 }
 
 .choose-wallet-text{
-  margin-left: 1rem;
+  font-size: o.4rem;
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: -.5rem;
+  font-family: "sora";
   color: black;
 }
 
@@ -167,6 +173,7 @@ input {
   border-radius: 0.4rem;
   background-color: #f8f9fa;
   border: 1px solid #CFD8DC;
+  font-family: "sora";
 }
 
 /* //Inspiration Section// */
@@ -370,15 +377,36 @@ footer div p {
 
 @media screen and (max-width: 800px) {
   
-  /* .nav-links {
-    display: none;
-  } */
  .hide-link{
   display: none;
  }
 }
 
 @media screen and (max-width: 600px){
+  .home-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .home-nav img{
+    height: 25px;
+    display: flex;
+    margin: auto 0;
+  }
+  .connect-btn{
+    padding: 0.7rem;
+  }
+  .hero-container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+.hero-description{
+  font-size: 1rem;
+}
+.ad{
+  height: 2rem;
+}
+
   footer{
     display: block;
     text-align: center;

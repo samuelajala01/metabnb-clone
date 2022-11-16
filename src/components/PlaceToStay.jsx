@@ -51,7 +51,7 @@ const PlaceToStay = () => {
       <nav className="home-nav">
         <img src={Metabnb} height="35" />
         <span className="nav-links">
-          <Link className="nav-link " to="/">
+          <Link className="nav-link" to="/">
             Home
           </Link>
           <Link className="nav-link hide-link" to="/placetostay">

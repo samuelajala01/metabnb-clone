@@ -13,11 +13,6 @@ Modal.setAppElement("#root");
 
 const HomePage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [openMobileNav, setOpenMobileNav] = useState(false);
-
-  const handleOpen = () => {
-    setOpenMobileNav(!openMobileNav);
-  };
 
   return (
     <>
