@@ -1,35 +1,39 @@
 import InspirationSection from "./InspirationSection";
 import NftSection from "./NftSection";
-import Metamask from "../assets/Logos/Group 4040.png";
-import Opensea from "../assets/Logos/Frame 4041.png";
-import MbToken from "../assets/Logos/Group 59537.png";
 import HeroImg from "../assets/Images/hero-img.jpg";
 import AdImg from "../assets/Images/ad-img.png";
 import { Link } from "react-router-dom";
 import Metabnb from "../assets/Logos/metabnb.svg";
 import Modal from "react-modal";
 import { useState } from "react";
-// import ModalContent from "./ModalContent";
+import Metamask from "../assets/Logos/metamask-logo.png";
+import WalletConnect from "../assets/Logos/wallet-connect.jpg";
 
 Modal.setAppElement("#root");
 
 const HomePage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [openMobileNav, setOpenMobileNav] = useState(false);
+
+  const handleOpen = () => {
+    setOpenMobileNav(!openMobileNav);
+  };
 
   return (
     <>
       <nav className="home-nav">
-        <img src={Metabnb} height="50" />
+        <img src={Metabnb} height="35" />
         <span className="nav-links">
-          <Link className="nav-link" to="/">
+          <Link className="nav-link hide-link" to="/">
             Home
           </Link>
           <Link className="nav-link" to="/placetostay">
             Place to stay
           </Link>
-          <Link className="nav-link">NFTs</Link>
-          <Link className="nav-link">Community</Link>
+          <Link className="nav-link hide-link">NFTs</Link>
+          <Link className="nav-link hide-link">Community</Link>
         </span>
+
         <button
           className="purple connect-btn white-text"
           onClick={() => setModalIsOpen(true)}
@@ -91,12 +95,17 @@ const HomePage = () => {
           <p className="choose-wallet-text">Choose your preferred wallet</p>
           <div className="select-wallet-div">
             <div className="wallet">
-              <p className="wallet-name">Metamask</p>
-              <p>V</p>
+              <p className="wallet-name">
+                <img src={Metamask} height="40" /> <span>Metamask</span>
+              </p>
+              <p className="wallet-click">&gt;</p>
             </div>
             <div className="wallet">
-              <p className="wallet-name">WalletConnect</p>
-              <p>V</p>
+              <p className="wallet-name">
+                <img src={WalletConnect} height="40" />
+                <span>WalletConnect</span>
+              </p>
+              <p className="wallet-click">&gt;</p>
             </div>
           </div>
         </section>

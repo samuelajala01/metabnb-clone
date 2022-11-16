@@ -1,4 +1,4 @@
-import NftsImg from "../assets/Images/nfts-img.jpg";
+import NftsImg from "../assets/Images/Frame 59546.png";
 
 const NftSection = () => {
   return (
