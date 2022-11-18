@@ -21,7 +21,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Metamask from "../assets/Logos/metamask-logo.png";
 import WalletConnect from "../assets/Logos/wallet-connect.jpg";
-import FilterLogo from "../assets/Logos/filter-icon.svg";
+import hamburger from "../assets/Logos/Hamburger_icon.svg.png";
 
 const PlaceToStay = () => {
   const [handleMobileNav, setHandleMobileNav] = useState(false);
@@ -73,7 +73,8 @@ const PlaceToStay = () => {
           </button>
           <img
             className="mobile-nav-btn"
-            src={FilterLogo}
+            src={hamburger}
+            width="40"
             onClick={() => setHandleMobileNav(!handleMobileNav)}
           />
         </div>
@@ -96,11 +97,9 @@ const PlaceToStay = () => {
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
         style={{
-          overlay: {
-            margin: "auto",
-          },
           content: {
             margin: "auto",
+            marginTop: "10rem",
             maxWidth: "30rem",
             height: "fit-content",
             borderRadius: "1rem",
@@ -112,7 +111,7 @@ const PlaceToStay = () => {
           <div className="connect-wallet-div">
             <p className="modal-title">Connect Wallet</p>
             <p className="modal-close" onClick={() => setModalIsOpen(false)}>
-              X
+              <img src={CloseBtn} />
             </p>
           </div>
           <p className="choose-wallet-text">Choose your preferred wallet</p>
@@ -121,14 +120,18 @@ const PlaceToStay = () => {
               <p className="wallet-name">
                 <img src={Metamask} height="40" /> <span>Metamask</span>
               </p>
-              <p className="wallet-click">&gt;</p>
+              <p className="wallet-click">
+                <img src={Greaterthan} />
+              </p>
             </div>
             <div className="wallet">
               <p className="wallet-name">
                 <img src={WalletConnect} height="40" />
                 <span>WalletConnect</span>
               </p>
-              <p className="wallet-click">&gt;</p>
+              <p className="wallet-click">
+                <img src={Greaterthan} />
+              </p>
             </div>
           </div>
         </section>

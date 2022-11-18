@@ -91,6 +91,11 @@ input {
 
 .nav-link {
   margin: 0 1rem;
+  color: #434343;
+  font-size: 20px;
+}
+.nav-link:hover{
+  color: #A02279;
 }
 
 .connect-btn {
@@ -103,6 +108,20 @@ input {
   display: none;
 }
 
+.mobile-nav-links{
+  padding: 2rem;
+  background-color: #A02279;
+  color: white;
+  font-weight: 1.2rem;
+}
+
+.mobile-nav-link{
+  z-index: 1;
+  text-align: right;
+  display: block;
+  margin: 1rem;
+}
+
 .purple-text {
   color: purple;
 }
@@ -112,7 +131,7 @@ input {
 }
 
 .ad {
-  max-width: 98vw;
+  max-width: 100vw;
   text-align: center;
 }
 
@@ -123,11 +142,15 @@ input {
   border-bottom: 1px solid gray;
 }
 
+.greaterthan{
+  color: #959DA6;
+}
+
 .modal-title{
   font-weight: 600;
   font-size: 1.2rem;
   font-family: "sora";
-  color: black;
+  color: #333333;
 }
 
 .choose-wallet-text{
@@ -136,7 +159,7 @@ input {
   margin-top: 1rem;
   margin-bottom: -.5rem;
   font-family: "sora";
-  color: black;
+  color: #333333;
 }
 
 .select-wallet-div{
@@ -163,7 +186,7 @@ input {
 
 .wallet-click{
   margin: auto 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .wallet{
@@ -375,31 +398,24 @@ footer div p {
     width: 70vw;
   }
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width:920px){
   .nav-links{
     display: none;
   }
-  .mobile-nav-links{
-    padding: 2rem;
-    background-color: #A02279;
-    color: white;
-    font-weight: 1.2rem;
-  }
-
-  .mobile-nav-link{
-    z-index: 1;
-    text-align: right;
-    display: block;
-    margin: 1rem;
-  }
-
   .mobile-nav-btn{
     display: inline-flex;
     vertical-align: middle;
     margin-left: 4vw;
    
   }
+}
+
+
+@media screen and (max-width: 800px) {
+  
+
+
+  
  
 }
 

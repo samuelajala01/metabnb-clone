@@ -8,18 +8,15 @@ import Modal from "react-modal";
 import { useState } from "react";
 import Metamask from "../assets/Logos/metamask-logo.png";
 import WalletConnect from "../assets/Logos/wallet-connect.jpg";
-import FilterLogo from "../assets/Logos/filter-icon.svg";
+import Greaterthan from "../assets/Logos/connect-gt.png";
+import CloseBtn from "../assets/Logos/close-logo.png";
+import hamburger from "../assets/Logos/Hamburger_icon.svg.png";
 
 Modal.setAppElement("#root");
 
 const HomePage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [handleMobileNav, setHandleMobileNav] = useState(false);
-
-  // const handleMobileNav = () => {
-  //   console.log("Button clicked");
-
-  // };
 
   return (
     <>
@@ -45,7 +42,8 @@ const HomePage = () => {
           </button>
           <img
             className="mobile-nav-btn"
-            src={FilterLogo}
+            src={hamburger}
+            width="40"
             onClick={() => setHandleMobileNav(!handleMobileNav)}
           />
         </div>
@@ -96,9 +94,6 @@ const HomePage = () => {
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
         style={{
-          overlay: {
-            // margin: "auto",
-          },
           content: {
             margin: "auto",
             marginTop: "10rem",
@@ -113,7 +108,7 @@ const HomePage = () => {
           <div className="connect-wallet-div">
             <p className="modal-title">Connect Wallet</p>
             <p className="modal-close" onClick={() => setModalIsOpen(false)}>
-              X
+              <img src={CloseBtn} />
             </p>
           </div>
           <p className="choose-wallet-text">Choose your preferred wallet</p>
@@ -122,14 +117,18 @@ const HomePage = () => {
               <p className="wallet-name">
                 <img src={Metamask} height="40" /> <span>Metamask</span>
               </p>
-              <p className="wallet-click">&gt;</p>
+              <p className="wallet-click">
+                <img src={Greaterthan} />
+              </p>
             </div>
             <div className="wallet">
               <p className="wallet-name">
                 <img src={WalletConnect} height="40" />
                 <span>WalletConnect</span>
               </p>
-              <p className="wallet-click">&gt;</p>
+              <p className="wallet-click">
+                <img src={Greaterthan} />
+              </p>
             </div>
           </div>
         </section>
