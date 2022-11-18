@@ -9,7 +9,9 @@ const ProductItem = (props) => {
       <div className="product-description">
         <p>
           <span>Desert King</span>
-          <span>1MBT per night</span>
+          <span>
+            <b>1MBT per night</b>
+          </span>
         </p>
         <p>
           <span>234.5km away</span>

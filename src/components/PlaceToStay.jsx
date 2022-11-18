@@ -21,8 +21,11 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Metamask from "../assets/Logos/metamask-logo.png";
 import WalletConnect from "../assets/Logos/wallet-connect.jpg";
+import FilterLogo from "../assets/Logos/filter-icon.svg";
 
 const PlaceToStay = () => {
+  const [handleMobileNav, setHandleMobileNav] = useState(false);
+
   const productimages = [
     { src: Image1, name: "House 1" },
     { src: Image2, name: "House 2" },
@@ -49,25 +52,46 @@ const PlaceToStay = () => {
   return (
     <>
       <nav className="home-nav">
-        <img src={Metabnb} height="35" />
+        <img className="nav-logo" src={Metabnb} height="35" />
         <span className="nav-links">
           <Link className="nav-link" to="/">
             Home
           </Link>
-          <Link className="nav-link hide-link" to="/placetostay">
-            Place to stay
+          <Link className="nav-link" to="/placetostay">
+            Places
           </Link>
-          <Link className="nav-link hide-link">NFTs</Link>
-          <Link className="nav-link hide-link">Community</Link>
+          <Link className="nav-link">NFTs</Link>
+          <Link className="nav-link">Community</Link>
         </span>
 
-        <button
-          className="purple connect-btn white-text"
-          onClick={() => setModalIsOpen(true)}
-        >
-          Connect Wallet
-        </button>
+        <div>
+          <button
+            className="purple connect-btn white-text"
+            onClick={() => setModalIsOpen(true)}
+          >
+            Connect Wallet
+          </button>
+          <img
+            className="mobile-nav-btn"
+            src={FilterLogo}
+            onClick={() => setHandleMobileNav(!handleMobileNav)}
+          />
+        </div>
       </nav>
+      {handleMobileNav && (
+        <>
+          <div className="mobile-nav-links">
+            <Link className="mobile-nav-link" to="/">
+              Home
+            </Link>
+            <Link className="mobile-nav-link" to="/placetostay">
+              Place to stay
+            </Link>
+            <Link className="mobile-nav-link">NFTs</Link>
+            <Link className="mobile-nav-link">Community</Link>
+          </div>
+        </>
+      )}
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}

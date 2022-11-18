@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 0.5px solid red; */
+  border: 0.5px solid red;
 }
 
 body {
@@ -27,9 +27,6 @@ button {
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
 }
 
-.mobile-nav{
-  display: none;
-}
 
 .hero-container {
   display: flex;
@@ -82,9 +79,9 @@ input {
 /* //Nav bar// */
 
 .home-nav {
-  padding: 1rem 0;
+  padding: 1rem 6.5vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav-links {
@@ -100,6 +97,10 @@ input {
   padding: 0.7rem 1.4rem;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.mobile-nav-btn{
+  display: none;
 }
 
 .purple-text {
@@ -376,10 +377,30 @@ footer div p {
 }
 
 @media screen and (max-width: 800px) {
-  
- .hide-link{
-  display: none;
- }
+  .nav-links{
+    display: none;
+  }
+  .mobile-nav-links{
+    padding: 2rem;
+    background-color: #A02279;
+    color: white;
+    font-weight: 1.2rem;
+  }
+
+  .mobile-nav-link{
+    z-index: 1;
+    text-align: right;
+    display: block;
+    margin: 1rem;
+  }
+
+  .mobile-nav-btn{
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: 4vw;
+   
+  }
+ 
 }
 
 @media screen and (max-width: 600px){
@@ -389,7 +410,7 @@ footer div p {
     justify-content: space-between;
     padding: 1rem;
   }
-  .home-nav img{
+  .nav-logo{
     height: 25px;
     display: flex;
     margin: auto 0;
