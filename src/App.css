@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 0.5px solid red;
+  /* border: 0.5px solid red; */
 }
 
 body {
@@ -113,6 +113,7 @@ input {
   background-color: #A02279;
   color: white;
   font-weight: 1.2rem;
+  animation-delay: 3s;
 }
 
 .mobile-nav-link{

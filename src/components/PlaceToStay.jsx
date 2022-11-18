@@ -22,6 +22,8 @@ import { useState } from "react";
 import Metamask from "../assets/Logos/metamask-logo.png";
 import WalletConnect from "../assets/Logos/wallet-connect.jpg";
 import hamburger from "../assets/Logos/Hamburger_icon.svg.png";
+import CloseBtn from "../assets/Logos/close-logo.png";
+import Greaterthan from "../assets/Logos/connect-gt.png";
 
 const PlaceToStay = () => {
   const [handleMobileNav, setHandleMobileNav] = useState(false);
